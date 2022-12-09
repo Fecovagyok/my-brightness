@@ -20,7 +20,7 @@ int send_msg_queue(mqd_t message_queue, const char* message){
 
 void on_queue_error(const char* activity) {
     char error[ERROR_BUFF_SIZE];
-    snprintf(error, ERROR_BUFF_SIZE, "Bright-up: %s: \n%d\n", activity, errno);
+    snprintf(error, ERROR_BUFF_SIZE, "Bright-client: %s: \n%d\n", activity, errno);
     write(STDERR_FILENO, error, strlen(error));
 }
 
