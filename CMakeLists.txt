@@ -4,8 +4,8 @@ project(myFirst C)
 set(CMAKE_C_STANDARD 99)
 
 add_executable(bright-daemon daemon.c)
-add_executable(bright-up clients/bright-up.c clients/client_common.cpp clients/client_common.h)
-add_executable(bright-down clients/bright-down.c clients/client_common.cpp clients/client_common.h)
+add_executable(bright-up clients/bright-up.c clients/client_common.cpp)
+add_executable(bright-down clients/bright-down.c clients/client_common.cpp)
 # add_executable(myFirst myFirst.c)
 
 if(CMAKE_BUILD_TYPE MATCHES Debug)
